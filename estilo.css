@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Righteous&family=Secular+One&family=Sora:wght@100;200;300;600;700;800&display=swap');
+
+:root{
+    --cor-principal: black;
+    --cor-principal-space: rgb(0, 204, 0);
+    --cor-principal-pac: rgb(253, 215, 0);
+    --cor-principal-dk: #61290e;
+    --cor-principal-mario: red;
+    --total-itens-space: 2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    margin: -23px;
+}
+
+header{
+    height: 130px;
+    text-align: center;
+    background-color: var(--cor-principal);
+    margin-top: 0;
+}
+
+header h1{
+    padding: 45px;
+    font-family: 'Righteous', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul{
+    text-align: center;
+    margin: 25px;
+    list-style-type: none;
+}
+
+nav{
+    margin-bottom: 50px;
+}
+
+/*ID's*/
+#intro-pag{
+    margin: auto;
+    margin-top: 0;
+}
+
+#titulo-intro{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#botao-invaders{
+    box-shadow: 3px 3px 15px 5px var(--cor-principal-space);
+}
+
+#botao-pac-man{
+    box-shadow: 3px 3px 15px 5px var(--cor-principal-pac);
+}
+
+#botao-dk{
+    box-shadow: 3px 3px 15px 5px var(--cor-principal-dk);
+}
+
+#botao-mario{
+    box-shadow: 3px 3px 15px 5px var(--cor-principal-mario);
+}
+
+/*Classes*/
+.botao-intro{
+    display: inline-block;
+    width: 220px;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.titulo-jogo{
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    padding: 35px;
+}
+
+.banner-game{
+    background-color: var(--cor-principal);
+    height: 100px;
+}
+
+.conteudo-padrao{
+    margin-top: 30px;
+}
+
+.slide-controler:nth-child(1):checked ~ .slide-show .slide-list{--select-item: 0;}
+.slide-controler:nth-child(2):checked ~ .slide-show .slide-list{--select-item: 1;}
+
+.slide-list{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: calc(var(--total-itens-space) * 100%);
+    position: relative;
+    --select-item: 0;
+    left: calc(var(--select-item) * -100%);
+}
+
+.slide-show{
+    overflow: hidden;
+}
+
+.controler{
+    text-align: center;
+}
