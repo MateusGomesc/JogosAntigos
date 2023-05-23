@@ -104,15 +104,9 @@ footer p{
     margin-bottom: 5px;
 }
 
-#botao-saiba-mais{
-    color: var(--cor-principal);
-    background-color: var(--cor-secundaria);
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px 10px var(--cor-tercearia);
-    text-align: center;
-    width: 220px;
-    margin-top: 20px;
-    margin: auto;
+#botao-referencia{
+    display: inline-block;
+    margin-left: 44%;
 }
 
 /*Classes*/
@@ -201,4 +195,15 @@ footer p{
     height: 20px;
     margin: auto;
     padding: 13px;
+}
+
+.botao-final{
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    box-shadow: 3px 2px 9px 7px var(--cor-tercearia);
+    text-align: center;
+    width: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
