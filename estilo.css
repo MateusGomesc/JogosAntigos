@@ -52,7 +52,7 @@ nav{
 footer{
     background-color: var(--cor-principal);
     font-family: 'Secular One', sans-serif;
-    height: 260px;
+    height: auto;
 }
 
 footer p{
@@ -90,6 +90,7 @@ footer p{
 
 #referencia{
     margin: 20px;
+    margin-top: 20px;
     padding: 10px;
 }
 
